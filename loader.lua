@@ -11,7 +11,7 @@ elseif GameID == TM then
     loadstring(game:HttpGet("https://github.com/Patooh777/SunsetX/blob/Main/Games/TappingMasters.lua?raw=true", true))()
 elseif GameID == FH then
     loadstring(game:HttpGet("https://github.com/Patooh777/SunsetX/blob/Main/Games/FreeHatchers.lua?raw=true", true))()
-elseif GameID == AS
+elseif GameID == AS then
     loadstring(game:HttpGet("https://github.com/Patooh777/SunsetX/blob/Main/Games/AnimeSimulator.lua?raw=true", true))()
 else
     print("invalid Place")
