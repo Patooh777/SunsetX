@@ -17,7 +17,7 @@ elseif GameID == AS then
     loadstring(game:HttpGet("https://github.com/Patooh777/SunsetX/blob/Main/Games/AnimeSimulator.lua?raw=true", true))()
 elseif GameID == ALS then
     loadstring(game:HttpGet("https://github.com/Patooh777/SunsetX/blob/Main/Games/AnimeLostSimulator.lua?raw=true", true))()
-elseif GameID == DSMID then
+elseif GameID == DSMID or GameID == DSMID2 then
     loadstring(game:HttpGet("https://github.com/Patooh777/SunsetX/blob/Main/Games/DemonSlayerMidnightSun.lua?raw=true", true))()
 else
     print("invalid Place")
