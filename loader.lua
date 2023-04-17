@@ -3,6 +3,7 @@ local TM = 12422074717
 local FH = 11162791099
 local AS = 10521031051
 local ALS = 12413786484
+local DSMID = 8874112980
 local GameID = game.PlaceId
 
 if GameID == BFS then
@@ -15,6 +16,8 @@ elseif GameID == AS then
     loadstring(game:HttpGet("https://github.com/Patooh777/SunsetX/blob/Main/Games/AnimeSimulator.lua?raw=true", true))()
 elseif GameID == ALS then
     loadstring(game:HttpGet("https://github.com/Patooh777/SunsetX/blob/Main/Games/AnimeLostSimulator.lua?raw=true", true))()
+elseif GameID == DSMID then
+    loadstring(game:HttpGet("https://github.com/Patooh777/SunsetX/blob/Main/Games/DemonSlayerMidnightSun.lua?raw=true", true))()
 else
     print("invalid Place")
     game.Players.LocalPlayer:Kick("Ur script dont support this shit ass game")
