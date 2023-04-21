@@ -1,25 +1,19 @@
-local BFS = 12289293395
-local TM = 12422074717
-local FH = 11162791099
-local AS = 10521031051
-local ALS = 12413786484
-local DSMID = 8874112980
-local DSMID2 = 10136095859
-local GameID = game.PlaceId
+local Repo = 'https://raw.githubusercontent.com/Patooh777/SunsetX/Main/Games/'
+local GameId = game.PlaceId
+local GamesList = {
+    [12289293395] = 'BoxingFightersSimulator.lua',
+    [12422074717] = 'TappingMasters.lua',
+    [11162791099] = 'FreeHatchers.lua',
+    [10521031051] = 'AnimeSimulator.lua',
+    [12413786484] = 'AnimeLostSimulator.lua',
 
-if GameID == BFS then
-    loadstring(game:HttpGet("https://github.com/Patooh777/SunsetX/blob/Main/Games/BoxingFightersSimulator.lua?raw=true", true))()
-elseif GameID == TM then
-    loadstring(game:HttpGet("https://github.com/Patooh777/SunsetX/blob/Main/Games/TappingMasters.lua?raw=true", true))()
-elseif GameID == FH then
-    loadstring(game:HttpGet("https://github.com/Patooh777/SunsetX/blob/Main/Games/FreeHatchers.lua?raw=true", true))()
-elseif GameID == AS then
-    loadstring(game:HttpGet("https://github.com/Patooh777/SunsetX/blob/Main/Games/AnimeSimulator.lua?raw=true", true))()
-elseif GameID == ALS then
-    loadstring(game:HttpGet("https://github.com/Patooh777/SunsetX/blob/Main/Games/AnimeLostSimulator.lua?raw=true", true))()
-elseif GameID == DSMID or GameID == DSMID2 then
-    loadstring(game:HttpGet("https://github.com/Patooh777/SunsetX/blob/Main/Games/DemonSlayerMidnightSun.lua?raw=true", true))()
+    [8874112980] = 'DemonSlayerMidnightSun.lua', 
+    [10136095859] = 'DemonSlayerMidnightSunTrainer.lua', 
+    [12999874474] = 'DemonSlayerMidnightSunRanked.lua', 
+}
+
+if GamesList[GameId] ~= nil then
+    loadstring(game:HttpGet(Repo.. GamesList[GameId]))()
 else
-    print("invalid Place")
-    game.Players.LocalPlayer:Kick("Ur script dont support this shit ass game")
-end
+    game.Players.LocalPlayer:Kick("Script dont support this game, if u think this is a error report to wertyz#3837")
+end 
